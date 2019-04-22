@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Exercise 1 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>JS DOM paragraph style</title>
+	</head>
+	<body>
+		<p id ='text'>When the button is pushed, the following paragraph will be blue.</p>
+		<div>
+			<button id="jsstyle"
+			onclick="js_style()">Style</button>
+		</div>
+		<p id="blue_paragraph">
+			Ex nisi magna velit ea incididunt sed reprehenderit proident excepteur amet pariatur eu id adipisicing excepteur incididunt eiusmod duis sint aute ut anim sint reprehenderit eu mollit officia deserunt deserunt non elit ex consectetur tempor cupidatat amet ut quis pariatur deserunt nulla culpa anim exercitation sunt dolore minim magna eu culpa sed est dolore velit sit veniam proident ad sunt ut magna laborum non cillum ullamco ea excepteur aliquip ea aute in quis laboris id non esse est enim amet eiusmod elit ut duis ex labore ut mollit ad fugiat officia ut est in ut duis sint nulla sed id dolor dolore reprehenderit veniam duis excepteur ut excepteur ut duis officia non excepteur ea sunt nostrud ut sint magna dolor cupidatat consequat officia pariatur occaecat voluptate excepteur adipisicing et aliquip ad pariatur ad enim consequat duis ex incididunt sint culpa qui fugiat laborum ullamco reprehenderit excepteur velit ut eu voluptate commodo ut irure tempor nisi nulla cillum sed mollit et ea in culpa ex sed ad proident deserunt reprehenderit consectetur.
+		</p>
+	</body>
+	<script>
+		function js_style(){
+			document.getElementById("blue_paragraph").style.color = "blue";
+		}
+
+	</script>
+</html>
