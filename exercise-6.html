@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Exercise 6 -->
+<html><head>
+	<meta charset=utf-8 />
+	<title>Change the content of a cell</title>
+</head>
+<body>
+	<form action="/action_page.php">
+		Row: <input type="text" value="number" id="row_number"><br>
+		Cell: <input type="text" value="number" id="cell_number">
+		Text: <input type="text" value="text" id="text">
+	</form>
+	<table id="myTable" border="1">
+		<tr><td>Row1 cell1</td>
+		<td>Row1 cell2</td></tr>
+		<tr><td>Row2 cell1</td>
+		<td>Row2 cell2</td></tr>
+		<tr><td>Row3 cell1</td>
+		<td>Row3 cell2</td></tr>
+	</table><form>
+	<input type="button" onclick="changeContent()" value="Change content">
+	</form>
+</body>
+<script>
+	function changeContent(){
+		var x = document.getElementById("row_number").value;
+		x = x-1;
+		var y = document.getElementById("cell_number").value;
+		y = y-1;
+		var z = document.getElementById("text").value;
+		document.getElementById("myTable").rows[x].cells[y].innerHTML = z;
+	}
+</script>
+</html>
