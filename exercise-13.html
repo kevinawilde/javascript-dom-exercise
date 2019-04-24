@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Exercise 12 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>JS DOM paragraph style</title>
+	</head>
+	<body>
+		<p id ='text'>Height and Width.</p>
+		<p id="height_width">
+			
+		</p>
+	</body>
+	<script>
+		window.onresize =
+		function heightWidth(){
+			let x = window.innerWidth;
+			let y = window.innerHeight;
+			document.getElementById("height_width").innerHTML = `Height: ${x} px Width ${y} px`;
+		}
+		heightWidth();
+	</script>
+</html>
