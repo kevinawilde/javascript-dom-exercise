@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Exercise 12 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>JS DOM paragraph style</title>
+	</head>
+	<body>
+		<p id ='text'>When the button is pushed, the following paragraph will be blue.</p>
+		<div>
+			<a href="www.google.com" id="link" onmouseover="for_the_bold();">Hover here!</a>
+		</div>
+		<p id="blue_paragraph">
+			<label class="bold">We</label> have just started <label class="bold">this</label> section for the users (<label class="bold">beginner</label> to intermediate) who <label class="bold">want</label> to work with <label class="bold">various</label> JavaScript <label class="bold">problems</label> and write scripts online to <label class="bold">test</label> their JavaScript <label class="bold">skill</label>.
+		</p>
+	</body>
+	<script>
+		function for_the_bold(){
+			let x =document.getElementsByClassName("bold").length;
+			for(let i = 0; i< x; i++){
+				document.getElementsByClassName("bold")[i].style.fontWeight = "bold";
+			}
+		}
+
+	</script>
+</html>
