@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Exercise 11 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>JS DOM paragraph style</title>
+	</head>
+	<body>
+		<p id ='text'>When the button is pushed, an image will generate.</p>
+		<div>
+			<button id="jsstyle"
+			onclick="get_image()">Style</button>
+		</div>
+		<p id="result">
+			<img src="">
+		</p>
+		
+	</body>
+	<script>
+		function get_image(){
+			let randomNumber = Math.floor(Math.random() * 2); 
+			let list = ["http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg","http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg","http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"];
+			document.getElementById("result").innerHTML = `<img src="${list[randomNumber]}">`;
+		}
+
+	</script>
+</html>
